@@ -1,12 +1,29 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TestRouteComponent} from './test-route/test-route.component'
+import {AppComponent} from './app.component'
+import { MovieViewComponent } from './movie-view/movie-view.component';
+
+
 const routes: Routes = [
-  {path: 'test', component: TestRouteComponent}
+  
+  {path: 'today', component: MovieViewComponent},
+  {path: 'tomorrow', component: MovieViewComponent},
+  {path: 'todayAddTwoDays', component: MovieViewComponent},
+  {path: 'todayAddThreeDays', component: MovieViewComponent},
+  {path: 'todayAddFourDays', component: MovieViewComponent},
+  {path: 'todayAddFiveDays', component: MovieViewComponent},
+  {path: 'todayAddSixDays', component: MovieViewComponent},
+
+  {path: 'admin', component: MovieViewComponent},
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
+
+
 export class AppRoutingModule { }

@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import {TestRouteComponent} from './test-route/test-route.component';
 import { SelectDateComponent } from './select-date/select-date.component'
+import { MovieViewComponent } from './movie-view/movie-view.component';
+import { TruncatePipe } from './movie-view/truncate.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     TestRouteComponent,
-    SelectDateComponent
+    SelectDateComponent,
+    MovieViewComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,22 @@
+
+<div class="movie-view-wrapper" *ngFor="let movie of movieDatas">
+    <div class="movie-image">
+        <div class="movie-image-poster">
+            <img src={{movie.posterImg}} alt="">
+        </div>
+    </div>
+    <div class="movie-info">
+        <h1 class="movie-info-title">{{movie.title}}</h1>
+        <p class="movie-info-about">{{movie.type}} | {{movie.time}} | {{movie.age}}</p>
+        <p class="movie-info-description">
+            {{movie.description | truncate:120}} 
+        </p>
+        <p class="movie-info-description-show">Więcej</p>
+        <div class="btn-group">
+            <a href="#!" class="btn btn-data-select" *ngFor="let hour of movie.seassionHours"><button>{{hour}}</button></a>
+        </div>
+    </div>
+    <div class="movie-rating">
+        <p class="rate">{{movie.rate}} / 10</p>
+    </div>
+</div>

@@ -13,5 +13,5 @@ export class SelectDateComponent {
   todayAddThreeDays = new Date((new Date()).getTime() + (3 * 86400000))
   todayAddFourDays= new Date((new Date()).getTime() + (4 * 86400000))
   todayAddFiveDays = new Date((new Date()).getTime() + (5 * 86400000)) 
-  todayAddSixDays = new Date((new Date()).getTime() + (5 * 86400000)) 
+  todayAddSixDays = new Date((new Date()).getTime() + (6 * 86400000)) 
 }
