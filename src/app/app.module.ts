@@ -8,6 +8,7 @@ import {TestRouteComponent} from './test-route/test-route.component';
 import { SelectDateComponent } from './select-date/select-date.component'
 import { MovieViewComponent } from './movie-view/movie-view.component';
 import { TruncatePipe } from './movie-view/truncate.pipe';
+import { MoviesListComponent } from './movies-list/movies-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TruncatePipe } from './movie-view/truncate.pipe';
     TestRouteComponent,
     SelectDateComponent,
     MovieViewComponent,
-    TruncatePipe
+    TruncatePipe,
+    MoviesListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-
+<li>
 <div class="movie-view-wrapper" *ngFor="let movie of movieDatas">
     <div class="movie-image">
         <div class="movie-image-poster">
@@ -9,9 +9,9 @@
         <h1 class="movie-info-title">{{movie.title}}</h1>
         <p class="movie-info-about">{{movie.type}} | {{movie.time}} | {{movie.age}}</p>
         <p class="movie-info-description">
-            {{movie.description | truncate:120}} 
+            {{isFullBlown ? movie.description : movie.description | truncate:120}} 
         </p>
-        <p class="movie-info-description-show">Więcej</p>
+        <p class="movie-info-description-show" (click)="handleVisibiltyDescription()"> Więcej</p>
         <div class="btn-group">
             <a href="#!" class="btn btn-data-select" *ngFor="let hour of movie.seassionHours"><button>{{hour}}</button></a>
         </div>
@@ -20,3 +20,4 @@
         <p class="rate">{{movie.rate}} / 10</p>
     </div>
 </div>
+</li>

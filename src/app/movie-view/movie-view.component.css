@@ -19,7 +19,9 @@
 
 .movie-info{
     flex-basis: 50%;
-    text-align: center;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
 }
 
 .movie-rating{
