@@ -10,7 +10,8 @@ export interface Movie {
   rate: number
 }
 
-export const movieDatas = [
+export const movieDatas
+ = [
   {
     posterImg: "https://fwcdn.pl/fpo/55/10/10015510/8029347.6.jpg",
     isPremiere: true,

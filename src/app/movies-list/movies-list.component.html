@@ -1,5 +1,3 @@
-<ul>
-    <li *ngFor="let movie of movieDatas">
-        <app-movie-view></app-movie-view>
-    </li>
-</ul>
+<div *ngFor="let movie of film">
+<app-movie-view [movie]="movie"></app-movie-view>
+</div>

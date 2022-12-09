@@ -9,6 +9,7 @@ import { SelectDateComponent } from './select-date/select-date.component'
 import { MovieViewComponent } from './movie-view/movie-view.component';
 import { TruncatePipe } from './movie-view/truncate.pipe';
 import { MoviesListComponent } from './movies-list/movies-list.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MoviesListComponent } from './movies-list/movies-list.component';
     SelectDateComponent,
     MovieViewComponent,
     TruncatePipe,
-    MoviesListComponent
+    MoviesListComponent,
+    
   ],
   imports: [
     BrowserModule,

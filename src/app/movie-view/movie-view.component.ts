@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input } from '@angular/core';
-import { movieDatas} from '../../assets/movieDatas';
-
+import {Movie} from '../movies-list/movies-list.component'
 import { TruncatePipe } from './truncate.pipe';
 
  
@@ -12,13 +11,20 @@ import { TruncatePipe } from './truncate.pipe';
 
 
 
-
 export class MovieViewComponent {
 
- movieDatas = movieDatas
+  @Input() movie: Movie
+
  isFullBlown = false
+  
+ constructor(){
+
+  }
+
+ 
 
  handleVisibiltyDescription(){
   this.isFullBlown = !this.isFullBlown
+
  }
 }
